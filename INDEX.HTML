@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanjay S - Full Stack Developer specializing in MERN Stack. Building scalable and elegant web experiences.">
+    <meta name="keywords" content="Full Stack Developer, MERN Stack, Web Developer, React, Node.js">
+    <meta name="author" content="Sanjay S">
+    <title>Sanjay S | Full Stack Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Loading Screen -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+        <p class="loader-text">Loading Portfolio...</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="gradient-text">Sanjay</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Available for Opportunities</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Sanjay S</span>
+                </h1>
+                
+                <div class="hero-typing">
+                    <span class="typing-prefix">I'm a </span>
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                
+                <p class="hero-description">
+                    Building scalable & elegant web experiences with the MERN stack. 
+                    Passionate about creating innovative solutions that make a difference.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://linkedin.com/in/sanjay-s-5bb37b380" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/sanjayaids07" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/917358899429" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="tel:+917358899429" class="social-link" aria-label="Call">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <span class="window-btn red"></span>
+                            <span class="window-btn yellow"></span>
+                            <span class="window-btn green"></span>
+                        </div>
+                        <div class="window-title">portfolio.js</div>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">'Sanjay S'</span>,
+  <span class="code-property">role</span>: <span class="code-string">'Full Stack Developer'</span>,
+  <span class="code-property">stack</span>: [<span class="code-string">'MERN'</span>],
+  <span class="code-property">passion</span>: <span class="code-string">'Building Amazing Apps'</span>,
+  <span class="code-function">code</span>: () => {
+    <span class="code-keyword">return</span> <span class="code-string">'Clean & Scalable'</span>;
+  }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="profile-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="image-decoration decoration-1"></div>
+                        <div class="image-decoration decoration-2"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Full Stack Developer <span class="gradient-text">| MERN Specialist</span></h3>
+                    
+                   <p>
+    Hello! I'm <strong>Sanjay S</strong>, a passionate Full Stack Developer and a first-year student at 
+    <strong>Bannari Amman Institute of Technology</strong>, pursuing Artificial Intelligence and Data Science <strong>(AIDS)</strong>. 
+    I focus on the <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js) and enjoy building modern web applications.
+</p>
+
+<p>
+    I love creating <strong>simple, scalable, and user-friendly</strong> applications that solve real-world problems. 
+    My goal is to continuously learn and improve my skills in both development and emerging technologies.
+</p>
+
+<p>
+    From designing responsive frontends to developing strong backend systems, 
+    I aim to build projects that are clean, efficient, and easy to maintain.
+</p>
+
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Clean Code</h4>
+                                <p>Writing maintainable & scalable code</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Fast Learner</h4>
+                                <p>Quick to adapt to new technologies</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Team Player</h4>
+                                <p>Collaborative & communicative</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-outline" id="downloadResume">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- HTML Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon html-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Semantic & Accessible</p>
+                </div>
+                
+                <!-- CSS Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon css-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Modern & Responsive</p>
+                </div>
+                
+                <!-- JavaScript Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon js-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+ & Dynamic</p>
+                </div>
+                
+                <!-- React Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon react-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Component-Based UI</p>
+                </div>
+                
+                <!-- Node.js Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon node-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Server-Side Runtime</p>
+                </div>
+                
+                <!-- Express Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon express-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Express</h3>
+                    <p>Web Framework</p>
+                </div>
+                
+                <!-- MongoDB Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon mongo-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL Database</p>
+                </div>
+                
+                <!-- MySQL Skill -->
+                <div class="skill-card">
+                    <div class="skill-icon mysql-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL</h3>
+                    <p>Relational Database</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="projects-grid">
+                      <!-- Project 1: Travelling Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-plane project-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Travelling Website</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/sanjayaids07/Traveling-page" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/sanjayaids07/Traveling-page" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A beautiful and responsive travel website featuring stunning destinations, 
+                            interactive galleries, booking features, and smooth animations. Perfect for 
+                            exploring dream vacation spots.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: PCDP App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-mobile-alt project-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>PCDP App</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/sanjayaids07/pcdp" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/sanjayaids07/pcdp" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Progressive web application with advanced features, optimized performance, 
+                            and seamless user experience. Built with modern web technologies and 
+                            best practices.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">PWA</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Mini Dashboard -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-chart-line project-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Mini Dashboard</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/sanjayaids07/miniDashboard" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/sanjayaids07/miniDashboard" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Interactive analytics dashboard with real-time data visualization, 
+                            charts, graphs, and intuitive UI. Features clean design and 
+                            responsive layout for data monitoring.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Chart.js</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, 
+                        or opportunities to be part of your vision. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>sanjayclg2007@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+91 73588 99429</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Erode,Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Connect with me</h4>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/sanjay-s-5bb37b380" target="_blank" rel="noopener noreferrer" class="social-btn linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/sanjayaids07" target="_blank" rel="noopener noreferrer" class="social-btn github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://wa.me/917358899429" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="tel:+917358899429" class="social-btn phone">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="gradient-text">Sanjay</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p>Building scalable & elegant web experiences</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/in/sanjay-s-5bb37b380" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/sanjayaids07" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/917358899429" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+917358899429" aria-label="Call">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sanjay S. All rights reserved.</p>
+                <p>Designed & Built with <i class="fas fa-heart"></i> by Sanjay</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
